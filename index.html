@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biodata</title>
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
     <style>
        .nav ul {
             list-style-type: none;
@@ -34,9 +38,9 @@
         </style>
         </head>
         <body>
-        
-        <div class="nav">
-        <ul>
+          
+        <div class="nav navbar-expand-lg bg-light shadow-sm sticky-top">
+        <ul class="navbar-nav mx-auto">
             <li><a href="#">Biodata</a></li>
             <li> <a href="portofolio.html">Portofolio</a></li>
         </ul>
@@ -56,40 +60,74 @@
 
 <body>
 
-<h1>Sitrasin M Ramping<b></b></h1>
-<div class="container">
-    <h2 class="text-center mb-3">Tentang Saya</h2>
-            <img src="IMG-20211215-WA0017.jpg" width="200px" alt="...">
+<div class="container d-flex flex-column align-items-center justify-content-center mb-5">
+    <h1 class="mb-3">Sitrasin M Ramping</h1>
+            <img src="IMG-20211215-WA0017.jpg" class="gambar1 rounded-circle" alt="...">
+            <p class="subtitle">Peserta SIB SEAL AWS</p>
+          <i class="bi bi-arrow-down"></i>
         </div>
-            <p class="text-about text-secondary lh-lg">Saya seorang mahasiswa semester 7 program studi Teknologi Informasi.
+
+        <div class="row">
+          <div class="col-6">
+              <img src="IMG_20220113_113055.jpg" class="shadow rounded w-100" alt="...">
+          </div>
+          <div class="col-6">
+            <p class="text-about text-dark lh-lg fs-4 mb-5">
+                Saya seorang mahasiswa semester 7 program studi Teknologi Informasi.
                 Saat ini saya sedang mengikuti program Studi Independen di salah satu mitra 
                 yag bekerja sama dengan Kampus Merdeka yaitu SEAL. Disini saya mendapatkan 
                 banyak pelajaran dari para mentor dan pemateri yang sangat menarik. Saya juga 
                 dapat berkenalan dengan mahasiswa dari berbagai kampus dan daerah sehingga 
                 program ini menjadi sangat menyenangkan. Harapan saya di SEAL, semoga saya 
                 dapat mengembangkan keahlian dan minat saya selama program berlangsung yang juga 
-                menjadi kesempatan bagi saya untuk maenambah ilmu sebanyak-banyaknya.</p>
+                menjadi kesempatan bagi saya untuk menambah ilmu sebanyak-banyaknya.</p>
         </div>
     </div>
-  </div>
 
   <!--skill-->
 <p> </p>
-<h2>Keahlian Saya</h2>
-<div class="card" style="width: 18rem;">
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">Microsoft Office</li>
-      <li class="list-group-item">Design (Balsamiq)</li>
-      <li class="list-group-item">Analistyc</li>
-    </ul>
-  </div>
+<div class="container mb-5">
+  <h2 class="text-center">Keahlian Saya</h2>
+  <div class="row">
+      <div class="col-4">
+          <div class="card">
+                  <img src="Ms.office.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Microsoft Office</h5>
+                    <p class="card-text">Microsoft Office adalah sebuah paket perangkat lunak klien serta perangkat lunak server yang dikembangkan oleh Microsoft. Umumnya Microsoft Office ini digunakan sebagai alat untuk mempermudah aktivitas dalam perkantoran.</p>
+                    <a href="#" class="btn btn-primary w-100">Go somewhere</a>
+                  </div>
+                </div>
+          </div>
+          <div class="col-4">
+              <div class="card">
+                      <img src="Balsamiq.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Design (Balsamiq)</h5>
+                        <p class="card-text">Balsamiq adalah salah satu tool yang digunakan para UI designer maupun UX designer untuk pembuatan desain atau prototyping dalam pembuatan tampilan user interface yang berfokus pada struktur dan konten wireframe.</p>
+                        <a href="#" class="btn btn-primary w-100">Go somewhere</a>
+                      </div>
+                    </div>
+              </div>
+              <div class="col-4">
+                  <div class="card">
+                          <img src="analistyc.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Analistyc</h5>
+                            <p class="card-text">Analistyc adalah metode atau ilmu untuk melakukan analisis logis. Penerapan umum analitika di antaranya adalah untuk mempelajari data bisnis dengan menggunakan analisis statistik untuk memahami kinerja bisnis.</p>
+                            <a href="#" class="btn btn-primary w-100">Go somewhere</a>
+                          </div>
+                        </div>
+                  </div>
 <p> </p>
-<h2>Pendidikan Saya<b></b></h2>
-<ul>
-    <li>2011-2014       : SMP Negeri 1 Tual</li>
-    <li>2014-2017       : SMK Negeri 1 Banda</li>
-    <li>2019-sekarang   : Universitas Bina Sarana Informatika</li>
+<h2 class="container d-flex flex-column align-items-center justify-content-center">Pendidikan Saya<b></b></h2>
+<div class="d-flex justify-content-center">
+<ul class="list-group list-group-flush">
+    <li class="list-group-item">2011-2014       : SMP Negeri 1 Tual</li>
+    <li class="list-group-item">2014-2017       : SMK Negeri 1 Banda</li>
+    <li class="list-group-item">2019-sekarang   : Universitas Bina Sarana Informatika</li>
 </ul>
+</div>
 
 <!--kontak-->
 <p> </p>
@@ -108,11 +146,11 @@
             <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
             <br><textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
           </div>
-          <button type="button" class="btn btn-primary">Submit</button>
+          <button type="button" class="btn btn-primary w-100">Submit</button>
     </form>
 </div>
-<p><a href="https://www.instagram.com/sitrasinmr/">Instagram</a></p>
-<p><a href="https://www.linkedin.com/in/sitrasin-mr-358660242/">LinkedIn</a></p>
+<p class="text-center"><a href="https://www.instagram.com/sitrasinmr/">Instagram</a></p>
+<p class="text-center"><a href="https://www.linkedin.com/in/sitrasin-mr-358660242/">LinkedIn</a></p>
 
 <!--footer-->
 <div class="container">
